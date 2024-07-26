@@ -18,7 +18,7 @@
 	if(session.getAttribute("userID")==null){
 	%>
 	        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
-  <a class="navbar-brand" href="#">ABC Website</a>
+  <a class="navbar-brand" href="#">DEF Website</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
