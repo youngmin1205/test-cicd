@@ -16,7 +16,7 @@ phases:
       - mkdir -p target
       - echo "Creating ZIP archive of ROOT directory"
       - cd webapps
-      - zip -r ../target/sourcecode.zip ROOT/
+      - zip -r ../target/ ROOT/
       - echo "Build process complete"
 
   post_build:
