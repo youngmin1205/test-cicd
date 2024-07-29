@@ -4,9 +4,11 @@ phases:
   install:
     runtime-versions:
       java: corretto11
+
   pre_build:
     commands:
       - echo Pre-build phase
+
   build:
     commands:
       - echo Build started on `date`
@@ -16,6 +18,7 @@ phases:
       - cd webapps
       - zip -r ../target/projectcode.war ROOT/
       - echo "Build process complete"
+
   post_build:
     commands:
       - echo Build completed on `date`
@@ -23,5 +26,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: webapps/ROOT
+  base-directory: target
   discard-paths: no
+
