@@ -14,9 +14,9 @@ phases:
       - echo Build started on `date`
       - echo "Starting build process"
       - mkdir -p target
-      - echo "Packaging application"
+      - echo "Creating ZIP archive of ROOT directory"
       - cd webapps
-      - zip -r ../target/projectcode.war ROOT/
+      - zip -r ../target/sourcecode.zip ROOT/
       - echo "Build process complete"
 
   post_build:
@@ -28,4 +28,3 @@ artifacts:
     - '**/*'
   base-directory: target
   discard-paths: no
-
