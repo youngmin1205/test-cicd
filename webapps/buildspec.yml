@@ -14,8 +14,8 @@ phases:
       - mkdir -p target
       - echo "Copying application files"
       - cp -r webapps/ROOT/ target/
-      - cp appspec.yml target/
-      - cp restartup.sh target/
+      - cp webapps/appspec.yml target/
+      - cp webapps/restartup.sh target/
       - echo "Build process complete"
   post_build:
     commands:
