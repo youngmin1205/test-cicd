@@ -15,6 +15,6 @@ permissions:
     
 hooks:
   AfterInstall:  # 배포를 완료한 후 실행되는 스크립트
-    - location: restart.sh
+    - location: restartup.sh
       timeout: 60
       runas: ec2-user
