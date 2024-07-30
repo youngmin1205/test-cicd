@@ -1,9 +1,9 @@
 #!/bin/bash
 
 APP_DIR="/home/ec2-user/app"
-TOMCAT_WEBAPPS_DIR="/path/to/tomcat/webapps"
+TOMCAT_WEBAPPS_DIR="/home/tomcat/apache-tomcat-9.0.91/webapps"
 
-echo "## Copying application files to Tomcat webapps directory"
+echo "## Copying files"
 cp -r $APP_DIR/ROOT $TOMCAT_WEBAPPS_DIR/
 
 echo "## Stopping Tomcat server"
