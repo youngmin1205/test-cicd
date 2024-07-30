@@ -1,10 +1,10 @@
 #!/bin/bash
-BUILD_WAR=$(ls /home/tomcat/apache-tomcat-9.0.91/webapps/ROOT/*.war)
+BUILD_WAR=$(ls /home/ec2-user/app/*.war)
 WAR_NAME=$(basename $BUILD_WAR)
 echo "## build 파일명: $WAR_NAME"
  
 echo "## build 파일 복사"
-DEPLOY_PATH=/home/tomcat/apache-tomcat-9.0.91/webapps/ROOT/
+DEPLOY_PATH=/home/ec2-user/
 cp $BUILD_WAR $DEPLOY_PATH
 
 CURRENT_PID=$(pgrep -f $WAR_NAME)
