@@ -13,7 +13,9 @@ phases:
       - echo "Starting build process"
       - mkdir -p target
       - echo "Copying application files"
-      - cp -r webapps/ target/
+      - cp -r ROOT/ target/
+      - cp appspec.yml target/
+      - cp restartup.sh target/
       - echo "Build process complete"
   post_build:
     commands:
@@ -22,6 +24,4 @@ phases:
 artifacts:
   files:
     - target/**/*
-    - appspec.yml
-    - restartup.sh
   discard-paths: no
