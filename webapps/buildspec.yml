@@ -13,7 +13,7 @@ phases:
       - echo "Starting build process"
       - mkdir -p target
       - echo "Copying application files"
-      - cp -r ROOT/ target/
+      - cp -r webapps/ROOT/ target/
       - cp appspec.yml target/
       - cp restartup.sh target/
       - echo "Build process complete"
