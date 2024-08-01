@@ -13,6 +13,6 @@ sudo $TOMCAT_BIN_DIR/shutdown.sh
 sleep 5
 
 echo "## Starting Tomcat server"
-sudo $TOMCAT_BIN_DIR/shutdown.sh
+sudo $TOMCAT_BIN_DIR/startup.sh
 
 echo "## Deployment complete"
